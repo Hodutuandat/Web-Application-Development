@@ -1,0 +1,20 @@
+body {
+    background-image: url("AnhNenMoi.JPG");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+body table {
+    height: 50%;
+    width: 50%;
+    text-align: center;
+    padding-top:275px;
+}
+body table thead {
+    font-size: 50px;
+    font-weight: bold;
+    color: yellow;
+}
+body table tbody {
+    font-size: 30px;
+    color: white;
+}
