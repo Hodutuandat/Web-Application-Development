@@ -12,7 +12,7 @@ document.getElementById("submitBtn").addEventListener ("click", ()=> {
  if (!email) {
  emailError.innerText = "Email is required";
  isValid = false ;
- } else if (!email.includes (" @ ")) {
+ } else if (!email.includes ("@")) {
     emailError.innerText = "Invalid email format";
     isValid = false ;
  }
