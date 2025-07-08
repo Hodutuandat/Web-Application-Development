@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Name</title>
+</head>
+<body>
+    <p>Enter Name:</p>
+    <input type="text" id="nameInput" placeholder="Enter your name"> <br>
+    <button onclick="displayName()">Submit</button>
+    <p id="displayName"></p>
+    <script>
+        function displayName() {
+            var name = document.getElementById("nameInput").value;
+            document.getElementById("displayName").innerText = "Welcome, " + name + "!";
+        }
+    </script>
+</body>
+</html>

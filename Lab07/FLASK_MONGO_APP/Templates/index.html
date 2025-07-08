@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quan ly Sinh Vien</title>
+</head>
+<body>
+    <h1>DANH SÁCH SINH VIÊN</h1>
+    <a hraf="/add">Them sinh vien</a>
+    <hr>
+    <ol>
+        {% for student in students %}
+            <li class="student-item">
+                <span class="student-info">
+                    {{loop.index}}. {{ student.name }} - {{ student.age }} tuoi - {{ student.major }}
+                </span>
+                <div class="action">
+                    <a href="/delete/{{ student._id }}"><button class="delete-btn">Xoa</button></a>
+                    <a href="/edit/{{ student._id }}"><button class="edit-btn">Sua</button></a>
+                </div>
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
